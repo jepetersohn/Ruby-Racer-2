@@ -21,8 +21,7 @@ class RubyRacer
 
   # Prints the current game board
   # The board should have the same dimensions each time
-  # and you should use the "reputs" helper to print over
-  # the previous board
+  # and you should print over the previous board
   def print_board
   end
 end
