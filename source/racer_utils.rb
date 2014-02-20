@@ -12,12 +12,6 @@ class Die
   end
 end
 
-# Use "reputs" to print over a previously printed line,
-# assuming the cursor is positioned appropriately.
-def reputs(str = '')
-  puts "\e[0K" + str
-end
-
 # Clear the screen
 def clear_screen!
   print "\e[2J"
