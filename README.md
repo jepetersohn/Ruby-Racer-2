@@ -3,7 +3,7 @@
 ##Learning Competencies
 
 * Work with input / output from the console
-* Model a real world system using ruby code
+* Model a simple real-world system in Ruby code
 
 ##Summary
 
