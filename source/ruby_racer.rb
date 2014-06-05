@@ -1,4 +1,4 @@
-require 'die.rb'
+require_relative 'die.rb'
 
 class RubyRacer
   attr_reader :players, :length
