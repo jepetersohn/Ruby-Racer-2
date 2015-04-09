@@ -21,7 +21,7 @@ This challenge is about modeling a simple game with little human interaction and
 
 The source directory contains a lot of skeleton code; use it! You should mostly be filling out the pre-defined `RubyRacer` class, although feel free to dress up the output and have a little fun with the logic of the game. Maybe add some totally sweet [ASCII art](https://github.com/miketierney/artii)?
 
-Here's what the output should look like, roughly:  [link to video](https://www.youtube.com/embed/a4u4hV7Cguw?hd=1&amp;showinfo=0).
+Here's what the output should look like, roughly:  [link to video](https://vimeo.com/124535327).
 
 **Note**: Are you assuming there are only two players and they're always labeled `'a'` and `'b'`? Why? Try to write a version that accepts any number of players (identified by single characters) as input.
 
