@@ -1,9 +1,7 @@
-require_relative 'die.rb'
-
 class RubyRacer
-  attr_reader :players, :length
+  attr_reader :players, :die, :length
 
-  def initialize(players, length = 30)
+  def initialize(players, die, length = 30)
   end
 
   # Returns +true+ if one of the players has reached

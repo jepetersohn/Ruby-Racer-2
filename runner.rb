@@ -1,3 +1,4 @@
+require_relative 'die'
 require_relative 'ruby_racer'
 
 # The following methods will help us
@@ -21,8 +22,9 @@ end
 
 # Playing the game ...
 players = [:a, :b]
+die = Die.new
 
-game = RubyRacer.new(players)
+game = RubyRacer.new(players, die)
 
 # Clear the screen to prepare
 # for displaying the board.
