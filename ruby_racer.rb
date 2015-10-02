@@ -17,9 +17,9 @@ class RubyRacer
   def advance_player(player)
   end
 
-  # Prints the current game board
-  # The board should have the same dimensions each time
-  # and you should print over the previous board
-  def print_board
+  # Returns the current state of the game as a string
+  # that can be printed on the command line.
+  # The board should have the same dimensions each time.
+  def board_visualization
   end
 end

@@ -33,7 +33,7 @@ reset_screen
 until game.finished?
   players.each do |player|
     # We print the board out so we can see what's going on since the last advance
-    game.print_board
+    puts game.board_visualization
 
     #Then we advance the player
     game.advance_player!(player)
@@ -46,6 +46,6 @@ until game.finished?
 end
 
 # The game is over, so we need to print the "winning" board
-game.print_board
+puts game.board_visualization
 
 puts "Player '#{game.winner}' has won!"
