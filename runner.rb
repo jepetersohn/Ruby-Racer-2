@@ -1,11 +1,32 @@
 require_relative 'ruby_racer'
 
-players = ['a', 'b']
+# The following methods will help us
+# to update the screen when printing the board.
+# We don't need to test these methods.
+def reset_screen
+clear_screen
+move_to_home
+end
+
+# Clears the content on the screen. Ah, a fresh canvas.
+def clear_screen
+print "\e[2J"
+end
+
+# Moves the insert point in the terminal back to the upper left.
+def move_to_home
+print "\e[H"
+end
+
+
+# Playing the game ...
+players = [:a, :b]
 
 game = RubyRacer.new(players)
 
-# This clears the screen, so the fun can begin
-game.reset_screen
+# Clear the screen to prepare
+# for displaying the board.
+reset_screen
 
 until game.finished?
   players.each do |player|
@@ -18,7 +39,7 @@ until game.finished?
     # We need to sleep a little, otherwise the game will blow right past us.
     # See http://www.ruby-doc.org/core-1.9.3/Kernel.html#method-i-sleep
     sleep(0.5)
-    game.reset_screen
+    reset_screen
   end
 end
 

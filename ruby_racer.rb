@@ -24,22 +24,4 @@ class RubyRacer
   # and you should print over the previous board
   def print_board
   end
-
-  # We don't need to test this method.
-  def reset_screen
-    clear_screen
-    move_to_home
-  end
-
-  # Clears the content on the screen. Ah, a fresh canvas.
-  # We don't need to test this method.
-  def clear_screen
-    print "\e[2J"
-  end
-
-  # Moves the insert point in the terminal back to the upper left.
-  # We don't need to test this method.
-  def move_to_home
-    print "\e[H"
-  end
 end
