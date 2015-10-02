@@ -8,26 +8,29 @@ die = Die.new
 
 game = RubyRacer.new(players, die)
 
-# Clear the screen to prepare
-# for displaying the board.
+# Clear the screen and print the board
+# with players in their starting positions.
+# Then pause, so users can see the starting board.
 reset_screen
+puts game.board_visualization
+sleep(1)
 
+# Play the game.
 until game.finished?
-  players.each do |player|
-    # We print the board out so we can see what's going on since the last advance
-    puts game.board_visualization
+  # Do this each round until the game is finished.
 
-    #Then we advance the player
-    game.advance_player!(player)
-
-    # We need to sleep a little, otherwise the game will blow right past us.
-    # See http://www.ruby-doc.org/core-1.9.3/Kernel.html#method-i-sleep
-    sleep(0.5)
-    reset_screen
+  # Move each player forward.
+  game.players.each do |player|
+    game.advance_player(player)
   end
+
+  # Now that each player has moved,
+  # reprint the board with the new player positions
+  # and pause so users can see the updated board.
+  reset_screen
+  puts game.board_visualization
+  sleep(0.2)
 end
 
-# The game is over, so we need to print the "winning" board
-puts game.board_visualization
-
-puts "Player '#{game.winner}' has won!"
+# Once the game is finished, report the winner.
+puts "Player '#{game.winner}' wins!"
