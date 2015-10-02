@@ -5,7 +5,7 @@
 *Figure 1*.  A game of *Ruby Racer*.
 
 
-Vroom vroom! We're going to build a simple game called *Ruby Racer*. This is a game in the same sense that [Chutes and Ladders](http://en.wikipedia.org/wiki/Snakes_and_Ladders) is a game.  Roll the die and move forward.  There's no strategy or decision making, just hope for big rolls.
+Vroom vroom! We're going to build a simple game called *Ruby Racer*. This is a game in the same sense that [Chutes and Ladders](http://en.wikipedia.org/wiki/Snakes_and_Ladders) is a game: roll the die and move forward.  There's no strategy or decision making, just hope for big rolls.
 
 The game is a race between two players.  Both players start at the beginning of the track, side-by-side.  Players take turns rolling a die and advancing along the track until one of them reaches the end of the track and wins the game.  (See Figure 1.)
 
@@ -15,15 +15,15 @@ Some challenges in building our game will be (1) managing the state of the game 
 ### Code Base
 In this challenge, we're going to begin with some provided code.  We have some fully functional code:  a `Die` class that represents a real-world, rollable die and then a few methods that will help us updating the screen (see `die.rb` and `reset_screen.rb`.
 
-We also have some partially completed code:  the `RubyRacer` class where we'll find a number of empty method definitions with comments about what they should do, but we'll need to actually write the bodies of these methods ourselves (see `ruby_racer.rb`).
+We also have some partially completed code:  the `RubyRacer` class where we'll find a number of empty method definitions with comments about what they should do. We'll need to actually write the bodies of these methods ourselves (see `ruby_racer.rb`).
 
 And finally we have the driver code in `runner.rb`.  This code provides a basic outline for running a game of Ruby Racer.
 
-We may alter the provide code as necessary; however, the code base is generally well-written, and we should pay attention to the style, what methods exist, what their inputs and return values are, and how they segment the actions necessary to play the game.
+We may alter the provided code as necessary; however, the code base is generally well-written, and we should pay attention to the style, what methods exist, what their inputs and return values are, and how they segment the actions necessary to play the game.
 
 
 ## Releases
-### Release 0: Make the Game Payable
+### Release 0: Make the Game Playable
 We need to build on the provided code base to create a working version of *Ruby Racer*.  Most of the work will be in filling out the `RubyRacer` class, but we might want or need to change some of the other code as well.
 
 Let's remember to test our code.  While the behaviors of the `RubyRacer` class are described in comments related to each method, they are not documented in our test suite.
