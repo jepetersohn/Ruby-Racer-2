@@ -5,7 +5,7 @@ players = ['a', 'b']
 game = RubyRacer.new(players)
 
 # This clears the screen, so the fun can begin
-game.reset_screen!
+game.reset_screen
 
 until game.finished?
   players.each do |player|
@@ -18,7 +18,7 @@ until game.finished?
     # We need to sleep a little, otherwise the game will blow right past us.
     # See http://www.ruby-doc.org/core-1.9.3/Kernel.html#method-i-sleep
     sleep(0.5)
-    game.reset_screen!
+    game.reset_screen
   end
 end
 

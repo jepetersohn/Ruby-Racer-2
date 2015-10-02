@@ -15,8 +15,8 @@ class RubyRacer
   def winner
   end
 
-  # Rolls the dice and advances +player+ accordingly
-  def advance_player!(player)
+  # Rolls the die and advances +player+ accordingly
+  def advance_player(player)
   end
 
   # Prints the current game board
@@ -25,23 +25,21 @@ class RubyRacer
   def print_board
   end
 
+  # We don't need to test this method.
+  def reset_screen
+    clear_screen
+    move_to_home
+  end
 
-  #Clears the content on the screen. Ah, a fresh canvas.
-  #You don't have to test this
-  def clear_screen!
+  # Clears the content on the screen. Ah, a fresh canvas.
+  # We don't need to test this method.
+  def clear_screen
     print "\e[2J"
   end
 
-  #Moves the "cursor" back to the upper left.
-  #You don't have to test this
-  def move_to_home!
+  # Moves the insert point in the terminal back to the upper left.
+  # We don't need to test this method.
+  def move_to_home
     print "\e[H"
   end
-
-  #You don't have to test this
-  def reset_screen!
-    clear_screen!
-    move_to_home!
-  end
-
 end
