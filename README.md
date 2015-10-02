@@ -19,11 +19,19 @@ This challenge is about modeling a simple game with little human interaction and
 
 ###Release 0 : Implement Using the Skeleton Code
 
-The source gist for this challenge contains a lot of skeleton code; use it! You should mostly be filling out the pre-defined `RubyRacer` class, although feel free to dress up the output and have a little fun with the logic of the game. Maybe add some totally sweet [ASCII art](https://github.com/miketierney/artii)?
+The source directory contains a lot of skeleton code; use it! You should mostly be filling out the pre-defined `RubyRacer` class, although feel free to dress up the output and have a little fun with the logic of the game. Maybe add some totally sweet [ASCII art](https://github.com/miketierney/artii)?
 
-[Here's what the output should look like, roughly](https://vimeo.com/124535327)
+Here's what the output should look like, roughly:  [link to video](https://vimeo.com/124535327).
 
-**Note**: Are you assuming there are only two players and they're always labeled `'a'` and `'b'`? Why? If it's intentional as a means to get a simpler version up and running, that's fine, but it's important to be clear about what assumptions your program is making and why! Try to write a version that accepts any number of players (identified by single characters) as input.
+**Note**: Are you assuming there are only two players and they're always labeled `'a'` and `'b'`? Why? Try to write a version that accepts any number of players (identified by single characters) as input.
+
+All files in the project are fair game for editing.
+
+####Testing
+
+There are definitely some behaviors on the RubyRacer class worth testing. Write tests for `ruby_racer.rb`. You don't need to write tests for `die.rb` or `runner.rb`.
+
+You can test methods that work by calling `puts` if you'd like, but it's not required. If you do, you might need to hit Google to figure out how to handle testing `puts`.
 
 ###Release 1 : Think of Fun Additions
 
@@ -31,6 +39,4 @@ As a thought experiment, think about what would make this game more fun? Powerup
 
 Is your code well-suited to adding these features or would it be difficult?
 
-<!-- ##Optimize Your Learning -->
-
-##Resources
+Try to test your additions if you can. If not, that's ok, but reflect on why you couldn't test it and add it in a `tests.md` file.
