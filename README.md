@@ -1,7 +1,7 @@
 # Ruby Racer: Outrageous Fortune
 
 ## Summary
-![ruby race example gif](readme-assets/ruby-racer-example.gif)
+![ruby race example gif](readme-assets/ruby-racer-example.gif)  
 *Figure 1*.  A game of *Ruby Racer*.
 
 
