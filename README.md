@@ -1,7 +1,7 @@
 # Ruby Racer: Outrageous Fortune
 
 ## Summary
-![ruby race example gif](readme-assets/ruby-racer-example.gif)  
+![ruby race example gif](readme-assets/ruby-racer-example.gif)
 *Figure 1*.  A game of *Ruby Racer*.
 
 
@@ -13,7 +13,7 @@ Some challenges in building our game will be (1) managing the state of the game 
 
 
 ### Code Base
-In this challenge, we're going to begin with some provided code.  We have some fully functional code:  a `Die` class that represents a real-world, rollable die and then a few methods that will help us updating the screen (see `die.rb` and `reset_screen.rb`.
+In this challenge, we're going to begin with some provided code.  We have some fully functional code:  a `Die` class that represents a real-world, rollable die and then a few methods that will help us update the screen (see `die.rb` and `reset_screen.rb`.
 
 We also have some partially completed code:  the `RubyRacer` class where we'll find a number of empty method definitions with comments about what they should do. We'll need to actually write the bodies of these methods ourselves (see `ruby_racer.rb`).
 
