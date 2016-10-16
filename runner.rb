@@ -1,7 +1,7 @@
 require_relative 'die'
 require_relative 'ruby_racer'
 require_relative 'reset_screen'
-
+require "pry"
 
 players = [:a, :b]
 die = Die.new
@@ -19,6 +19,7 @@ sleep(1)
 until game.finished?
   # Do this each round until the game is finished.
 
+# binding.pry
   # Move each player forward.
   game.players.each do |player|
     game.advance_player(player)
